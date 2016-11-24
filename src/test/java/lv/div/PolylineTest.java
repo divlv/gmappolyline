@@ -1,9 +1,38 @@
-# Polyline functions for Google Maps
-The library contains some useful utils for encoding Polylines for Google Maps, checking point into the circle, etc.
+package lv.div.jarproject;
 
-For sample usage, see PolylineTest.java:
+import junit.framework.Test;
+import junit.framework.TestCase;
+import junit.framework.TestSuite;
+import gmap.polyline.LatLng;
+import gmap.polyline.PolyUtil;
+import java.util.ArrayList;
+import java.util.List;
 
-```java
+/**
+ * Unit test for sample application.
+ */
+public class PolylineTest extends TestCase {
+    /**
+     * Create the test case
+     *
+     * @param testName name of the test case
+     */
+    public PolylineTest( String testName )
+    {
+        super( testName );
+    }
+
+    /**
+     * @return the suite of tests being tested
+     */
+    public static Test suite()
+    {
+        return new TestSuite( PolylineTest.class );
+    }
+
+    /**
+     * Rigourous Test :-)
+     */
     public void testApp()
     {
         
@@ -31,35 +60,8 @@ For sample usage, see PolylineTest.java:
 		assertFalse(PolyUtil.containsLocation(new LatLng(56.94693, 24.108316), latLngs, true)); // Should be FALSE
 		
     }
-```
-
-**Commands**:
-
-Build JAR: `mvn clean package`
-
-**Hot to use your new library**:
-
-Newly created library may be used directly, placed into maven repository, if needed, or used from GitHub like this:
+	
 
 
-1) Add **jitpack.io** repository to your POM file:
-```xml
-    <repositories>
-        <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>
-    </repositories>
-```
-
-2) Add dependency to POM:
-
-```xml
-        <dependency>
-            <groupId>com.github.divlv</groupId> <!-- Your GitHub login (divlv) -->
-            <artifactId>gmappolyline</artifactId> <!-- Your GitHub repo name (of library) -->
-            <version>1.0</version> <!-- GitHub lib release version -->
-        </dependency>
-```
-
-3) Enjoy!
+	
+}
