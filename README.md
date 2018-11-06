@@ -27,8 +27,8 @@ For sample usage, see PolylineTest.java:
 		// "Is LatLng(56.946412, 24.108729) inside the circle?"
         assertTrue(PolyUtil.containsLocation(new LatLng(56.946412, 24.108729), latLngs, true)); // Should be TRUE
         
-		// "Is LatLng(56.94693, 24.108316) inside the circle?"
-		assertFalse(PolyUtil.containsLocation(new LatLng(56.94693, 24.108316), latLngs, true)); // Should be FALSE
+	// "Is LatLng(56.94693, 24.108316) inside the circle?"
+	assertFalse(PolyUtil.containsLocation(new LatLng(56.94693, 24.108316), latLngs, true)); // Should be FALSE
 		
     }
 ```
