@@ -1,6 +1,8 @@
 # Polyline functions for Google Maps
 The library contains some useful utils for encoding Polylines for Google Maps, checking point into the circle, etc.
 
+The code is working according to the real Globe form - Geoid (https://en.wikipedia.org/wiki/Geoid) not a sphere!
+
 For sample usage, see PolylineTest.java:
 
 ```java
